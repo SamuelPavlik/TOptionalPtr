@@ -77,7 +77,7 @@ There are few disadvantages to the wrapper which are discussed in the following 
 
 ### Run-time performance
 
-The first disadvantage is the performance overhead of creating the TOptional objects over regular invalidation checks. For this reason, performance tests have been implemented and can be found in Unreal Editor's Test Automation under OptionalPtr.Performance. All the performance tests work with a simple function that creates and returns new object. The results are averaged out over 100 000 repetitions. Following are results for when a non-UObject is supplied:
+The first disadvantage is the performance overhead of creating the TOptionalPtr objects over regular invalidation checks. For this reason, performance tests have been implemented and can be found in Unreal Editor's Test Automation under OptionalPtr. Performance. All the performance tests work with a simple function that creates and returns new object. The results are averaged out over 100 000 repetitions. Following are results for when a non-UObject is supplied:
 
 | # of consecutive function calls | Regular | TOptionalPtr | Total Delta | Delta per # of consecutive calls |
 | --- | --- | --- | --- | --- |
