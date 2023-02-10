@@ -31,7 +31,7 @@ const FDatabaseEntry* UUtils::GetDataBaseEntry(const FString & entry_name, const
 	return TOptionalPtr<UGameInstance>(UGameInstance::GetGameInstance(object))
           	.Map(&UGameInstance::GetGameDatabase)
            	.Map(&UGameDatabase::GetEntry, UGameDatabase::CalculateHandler(entry_name))
-            .Get();
+            	.Get();
 }
 ```
 
