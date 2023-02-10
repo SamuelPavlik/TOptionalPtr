@@ -69,7 +69,7 @@ APawn* UBlueprintLibrary::GetLocalPlayerPawn(const UObject* const world_context_
 
 As you can see, the code doesn't contain repetitive validation checks, it doesn't require explicit types for intermediate objects and can deal with both UObjects and non-UObjects without any runtime overhead due to compile-time checks.
 
-To ensure functionality and performance of the TOptionalPtr code a comprehensive automation spec (unit and performance tests) has been implemented and can be found in the file Source/keaton/Helpers/OptionalPtrSpec.cpp. TOptionalPtr is also documented using documentation comments inside the code describing each function of the class.
+To ensure functionality and performance of the TOptionalPtr code a comprehensive automation spec (unit and performance tests) has been implemented and can be found in the file OptionalPtrSpec.cpp. TOptionalPtr is also documented using documentation comments inside the code describing each function of the class.
 
 ## Disadvantages
 
