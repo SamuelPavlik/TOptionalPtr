@@ -2,7 +2,11 @@
 
 ## Overview
 
-TOptionalPtr is a wrapper class designed for Unreal Engine that takes an object pointer as it's constructor argument and proceeds to call member functions and fields on the object pointed to by the provided pointer. Additionally, TOptionalPtr can even call static functions where the wrapped object is the first argument. The main purpose of the wrapper is to reduce space in our functions taken by validation checks and make the functions more readable as the result. The best way to explain how it works is by an example. 
+TOptionalPtr is a wrapper class designed for Unreal Engine used much like Java's Optional but for pointers. The class takes an object pointer as it's constructor argument and proceeds to call member functions and fields on the object pointed to by the provided pointer only if the pointer is valid. It also contains compile-time checks for whether the pointer object is UObject, and in case it is, IsValid check is called instead of just regular nullptr check.
+
+Additionally, TOptionalPtr can even call static functions where the wrapped object is the first argument. 
+
+The main purpose of the wrapper is to reduce space in functions taken by validation checks and make the functions more readable as the result. The best way to explain how it works is by an example. 
 
 Imagine a static function in a utils class :
 
