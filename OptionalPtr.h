@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include <type_traits>
@@ -11,7 +9,7 @@
  * 
  */
 template<typename ObjectType>
-class KEATON_API TOptionalPtr
+class TOptionalPtr
 {
 #define METHOD_ASSERTS() \
 	static_assert(std::is_base_of<member_type_of_t<FuncType>, std::remove_cv_t<ObjectType>>::value,\
